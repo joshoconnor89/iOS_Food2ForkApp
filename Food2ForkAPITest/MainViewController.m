@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface MainViewController ()
 
@@ -143,27 +143,10 @@
     cell.publisherLabel.text = publisherText;
     cell.titleLabel.text = titleText;
     
-    
     NSURL *url = [NSURL URLWithString: self.recipeDictionary[@"image_url"]];;
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
-    
-    AFHTTPRequestOperation *requestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-    requestOperation.responseSerializer = [AFImageResponseSerializer serializer];
-    [requestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"Response: %@", responseObject);
-        
-        if (responseObject){
-            RecipeTableViewCell *updateCell = (id)[tableView cellForRowAtIndexPath:indexPath];
-            if (updateCell){
-                updateCell.recipeImage.image = responseObject;
-            }
-        }
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Image error: %@", error);
-    }];
-    [requestOperation start];
+    [cell.recipeImage sd_setImageWithURL:url
+                        placeholderImage:[UIImage imageNamed:@"imagePlaceholder.png"]];
     
     return cell;
     

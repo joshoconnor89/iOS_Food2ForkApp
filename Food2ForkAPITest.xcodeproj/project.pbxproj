@@ -25,7 +25,7 @@
 		034D473E1CDAEE6600802E7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034D473C1CDAEE6600802E7E /* LaunchScreen.storyboard */; };
 		034D47491CDAEE6600802E7E /* Food2ForkAPITestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 034D47481CDAEE6600802E7E /* Food2ForkAPITestTests.m */; };
 		034D47541CDAEE6600802E7E /* Food2ForkAPITestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 034D47531CDAEE6600802E7E /* Food2ForkAPITestUITests.m */; };
-		F2B45CDEF69C0FE999DDCF66 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AEA1F0F3E60223FDAE0521 /* libPods.a */; };
+		0D50E6B4B9DC14A1492ED166 /* libPods-Food2ForkAPITest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0739DBEEBD411E1312F01DD /* libPods-Food2ForkAPITest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,9 +77,9 @@
 		034D474F1CDAEE6600802E7E /* Food2ForkAPITestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Food2ForkAPITestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		034D47531CDAEE6600802E7E /* Food2ForkAPITestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Food2ForkAPITestUITests.m; sourceTree = "<group>"; };
 		034D47551CDAEE6600802E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		13F3AAEE47B9DB7EB269B8C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		1EBC7209BA08CAFA4BE53570 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		F2AEA1F0F3E60223FDAE0521 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5753CA9E195AADB860A62FB6 /* Pods-Food2ForkAPITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food2ForkAPITest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Food2ForkAPITest/Pods-Food2ForkAPITest.release.xcconfig"; sourceTree = "<group>"; };
+		C0739DBEEBD411E1312F01DD /* libPods-Food2ForkAPITest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Food2ForkAPITest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6F5F1D28585CB864A6F8EED /* Pods-Food2ForkAPITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food2ForkAPITest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food2ForkAPITest/Pods-Food2ForkAPITest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2B45CDEF69C0FE999DDCF66 /* libPods.a in Frameworks */,
+				0D50E6B4B9DC14A1492ED166 /* libPods-Food2ForkAPITest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,8 +126,8 @@
 				034D47471CDAEE6600802E7E /* Food2ForkAPITestTests */,
 				034D47521CDAEE6600802E7E /* Food2ForkAPITestUITests */,
 				034D47291CDAEE6600802E7E /* Products */,
-				522E86EC70F9574A8491EF21 /* Pods */,
-				C6D2180BFD46E284CE284A9E /* Frameworks */,
+				7C8CB85FF1121B5931B1295A /* Pods */,
+				43EA238595271C8200D67927 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,21 +195,21 @@
 			path = Food2ForkAPITestUITests;
 			sourceTree = "<group>";
 		};
-		522E86EC70F9574A8491EF21 /* Pods */ = {
+		43EA238595271C8200D67927 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1EBC7209BA08CAFA4BE53570 /* Pods.debug.xcconfig */,
-				13F3AAEE47B9DB7EB269B8C8 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		C6D2180BFD46E284CE284A9E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F2AEA1F0F3E60223FDAE0521 /* libPods.a */,
+				C0739DBEEBD411E1312F01DD /* libPods-Food2ForkAPITest.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C8CB85FF1121B5931B1295A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6F5F1D28585CB864A6F8EED /* Pods-Food2ForkAPITest.debug.xcconfig */,
+				5753CA9E195AADB860A62FB6 /* Pods-Food2ForkAPITest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,12 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 034D47581CDAEE6600802E7E /* Build configuration list for PBXNativeTarget "Food2ForkAPITest" */;
 			buildPhases = (
-				A4B19C11D5F2AD04FAA2F43F /* Check Pods Manifest.lock */,
+				B400400DE9AC1D2072956DA0 /* 📦 Check Pods Manifest.lock */,
 				034D47241CDAEE6600802E7E /* Sources */,
 				034D47251CDAEE6600802E7E /* Frameworks */,
 				034D47261CDAEE6600802E7E /* Resources */,
-				E18691D9A8F5F4597D153442 /* Embed Pods Frameworks */,
-				012C80126135B950D0751D08 /* Copy Pods Resources */,
+				5250417BEBD82506E0BF3E8D /* 📦 Embed Pods Frameworks */,
+				F6D83CFFE3B01DC8A4146292 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,29 +345,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		012C80126135B950D0751D08 /* Copy Pods Resources */ = {
+		5250417BEBD82506E0BF3E8D /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Food2ForkAPITest/Pods-Food2ForkAPITest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A4B19C11D5F2AD04FAA2F43F /* Check Pods Manifest.lock */ = {
+		B400400DE9AC1D2072956DA0 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,19 +375,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E18691D9A8F5F4597D153442 /* Embed Pods Frameworks */ = {
+		F6D83CFFE3B01DC8A4146292 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Food2ForkAPITest/Pods-Food2ForkAPITest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -546,7 +546,7 @@
 		};
 		034D47591CDAEE6600802E7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EBC7209BA08CAFA4BE53570 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = E6F5F1D28585CB864A6F8EED /* Pods-Food2ForkAPITest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Food2ForkAPITest/Info.plist;
@@ -558,7 +558,7 @@
 		};
 		034D475A1CDAEE6600802E7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13F3AAEE47B9DB7EB269B8C8 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 5753CA9E195AADB860A62FB6 /* Pods-Food2ForkAPITest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Food2ForkAPITest/Info.plist;

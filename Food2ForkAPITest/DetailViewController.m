@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface DetailViewController()
 
@@ -71,21 +72,12 @@
                 self.ingredientsArray = [@[@"Could not fetch ingredient list."]mutableCopy];
             }
 
+            NSURL *url = [NSURL URLWithString: self.recipeImageURL];;
             
-            NSURL *url = [NSURL URLWithString:self.recipeImageURL];
-            NSURLRequest *request = [NSURLRequest requestWithURL:url];
-            
-            AFHTTPRequestOperation *requestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-            requestOperation.responseSerializer = [AFImageResponseSerializer serializer];
-            [requestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-                NSLog(@"Response: %@", responseObject);
-                self.recipeImage.backgroundColor = [UIColor blackColor];
-                self.recipeImage.image = responseObject;
 
-            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                NSLog(@"Image error: %@", error);
-            }];
-            [requestOperation start];
+            [self.recipeImage sd_setImageWithURL:url
+                                placeholderImage:[UIImage imageNamed:@"imagePlaceholder.png"]];
+
             
         }
 
